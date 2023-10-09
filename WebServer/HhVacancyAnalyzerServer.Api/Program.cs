@@ -1,5 +1,4 @@
-using HhVacancyAnalyzerServer.Provider.Interfaces;
-using HhVacancyAnalyzerServer.Provider.Services;
+using HhVacancyAnalyzerServer.Provider.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +6,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddTransient<IItRolesHandlerService, ItRolesHandlerService>();
+builder.Services.AddServices();
 
 var app = builder.Build();
 
