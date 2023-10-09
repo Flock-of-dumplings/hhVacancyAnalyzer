@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HhVacancyAnalyzerServer.Api", "HhVacancyAnalyzerServer.Api\HhVacancyAnalyzerServer.Api.csproj", "{12707014-9E65-49B7-88FF-5F1AE55FAEA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HhVacancyAnalyzerServer.Provider", "HhVacancyAnalyzerServer.Provider\HhVacancyAnalyzerServer.Provider.csproj", "{37289870-1A44-4B5F-8125-925A7AC72FEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12707014-9E65-49B7-88FF-5F1AE55FAEA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12707014-9E65-49B7-88FF-5F1AE55FAEA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12707014-9E65-49B7-88FF-5F1AE55FAEA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12707014-9E65-49B7-88FF-5F1AE55FAEA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37289870-1A44-4B5F-8125-925A7AC72FEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37289870-1A44-4B5F-8125-925A7AC72FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37289870-1A44-4B5F-8125-925A7AC72FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37289870-1A44-4B5F-8125-925A7AC72FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
