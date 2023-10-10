@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Serif:wght@600;800&display=swap');
+
+:root {
+    --accent-color: #13A6BA;
+}  
+
+* {
+    color: #021112;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Serif', serif;
+
+    padding: 0;
+    margin: 0;
+
+    text-decoration: none;
+
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    
+    background-color: #FBEDDA;
+    padding-top: 4vh;
+    padding-left: 9vw;
+    padding-right: 9vw;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 2rem;
+    -webkit-text-stroke: 2px #021112;
+}
+
+.page-header__nav {
+    list-style: none;
+    vertical-align: middle;
+}
+
+.page-header__nav-link {
+    display: inline;
+    line-height: 6vh;
+    margin-right: 3vw;
+    font-size: 1.2rem;
+}
+
+.page-header__nav-login {
+    display: inline;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: white
+}
+
+.--default-button {
+    background-color: var(--accent-color);
+}
+
+.content {
+    margin-top: 20vh;
+}
+
+.content__welcome-message {
+    display: inline;
+    text-align: center;
+}
+
+.content__welcome-title {
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 7vh;
+    margin-bottom: 2vh;
+}
+
+.content__welcome-subtitle {
+    font-size: 2rem;
+    color: #677071;
+}
+
+.search-form {
+    margin-top: 9vh;
+}
+
+.search-form__container {
+    background-color: #ffffff;
+    height: 27vh;
+    width: 80vw;
+    border-radius: 20px;
+}
+
+.search-form__search-container {
+    display: flex;
+    line-height: 9vh;
+    min-height: 72px;
+    width: 80vw;
+    align-items: center;
+}
+
+.search-form__tag-list {
+    display: flex;
+}
+
+.search-form__tag {
+    display: inline;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    margin-left: 1vw;
+    background-color: #000000;
+    color: white;
+    height: 50px;
+    line-height: 38px;
+}
+
+.search-form__tag-input {
+    width: 100%;
+    border-radius: 20px;
+    line-height: inherit;
+    padding: 0 1vw;
+    height: 100%;
+    border: none;
+
+    font-size: 1.5rem;
+}
+
+.search-form__tag-input:focus {
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+
+.search-form__horizontal-delimeter {
+    background-color: #E0E2E3;
+    border: none;
+    height: 0.25vh;
+}
+
+.search-form__vertical-delimeter {
+    position: relative;
+    top: -2vh;
+    border: 1px solid #E0E2E3;
+    height: 13vh;
+}
+
+.search-form__settings {
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh 2.5vh;
+}
+
+.search-form__settings-item {
+    padding-left: 3vw;
+    font-size: 1.3rem;
+    width: 30vw;
+
+    cursor: pointer;
+}
+
+.search-form__area-icon {
+    position: absolute;
+    width: 1vw;
+    min-width: 15px;
+    padding-top: 0.2vh;
+}
+
+.search-form__category-icon {
+    position: absolute;
+    width: 1.5vw;
+    min-width: 15px;
+    padding-top: 0.2vh;
+}
+
+.search-form__salary-icon {
+    color: var(--accent-color);
+    position: absolute;
+    width: 1vw;
+    min-width: 15px;
+    padding-top: 0.2vh;
+}
+
+p.search-form__category {
+    padding-left: 2vw;
+}
+
+p.search-form__salary {
+    padding-left: 1.2vw;
+}
+
+.search-form__settings-title {
+    padding-left: 1.5vw;
+    margin: 0;
+    color: #677071;
+
+    font-size: 1.3rem;
+    line-height: 3vh;
+}
+
+.search-form__area {
+    display: inline;
+}
+
+.search-form__choosen-area {
+    font-size: 1.7rem;
+}
+
+p.search-form__choosen-category {
+    font-size: 1rem;
+    max-width: 15vw;
+}
+
+.search-form__choosen-salary {
+    font-size: 1.4rem;
+}
+
+.search-form__search-button {
+    padding: 2vh 10vh;
+    display: inline-block;
+    height: 7.5vh;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    margin-left: -30px;
+}
+
+@keyframes load-frame {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 100;
+    }
+}
+.content {
+    animation: load-frame 1s ease-out;
+}
+
+@keyframes appear {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 100;
+    }
+}
+.search-form__tag {
+    animation: appear 0.5s ease-out;
+}

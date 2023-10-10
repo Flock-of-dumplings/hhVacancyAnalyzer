@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>YourSalary</title>
+</head>
+<body>
+    <header class="page-header">
+        <p class="logo">YourSalary</p>
+        <ul class="page-header__nav">
+            <li class="page-header__nav-link"><a href="https://www.hh.ru " target="_blank">hh.ru</a></li>
+            <li class="page-header__nav-link"><a href="javascript:void(0);">О проекте</a></li>
+            <li class="page-header__nav-link"><a href="javascript:void(0);">Changelog</a></li>
+            <li class="page-header__nav-login --default-button">Войти</li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="content__welcome-message">
+            <h1 class="content__welcome-title">Анализ IT рынка труда</h1>
+            <p class="content__welcome-subtitle">Выберите критерии для поиска</p>
+        </div>
+        <form class="search-form">
+            <div class="search-form__container">
+                <div class="search-form__search-container">
+                    <div class="search-form__tag-list">
+                    </div>
+                    <input type="text" placeholder="Вводите теги, разделяя их пробелами" class="search-form__tag-input">
+                </div>
+                <hr class="search-form__horizontal-delimeter">
+                <div class="search-form__settings">
+                    <div class="search-form__settings-item">
+                        <img class = "search-form__area-icon" src="src/images/area-icon.svg" alt="">
+                        <p class="search-form__area search-form__settings-title">Регион</p>
+                        <p class="search-form__choosen-area">Екатеринбург</p>
+                    </div>
+                    <div class="search-form__vertical-delimeter"></div>
+                    <div class="search-form__settings-item">
+                        <img class = "search-form__category-icon" src="src/images/category-icon.svg" alt="">
+                        <p class="search-form__category search-form__settings-title">Категория</p>
+                        <p class="search-form__choosen-category">Информационные технологии, системная интеграция, интернет</p>
+                    </div>
+                    <div class="search-form__vertical-delimeter"></div>
+                    <div class="search-form__settings-item">
+                        <p class = "search-form__salary-icon">$</p>
+                        <p class="search-form__salary search-form__settings-title">Доход</p>
+                        <p class="search-form__choosen-salary">100 000 - 200 000 руб.</p>
+                    </div>
+                    <div class="search-form__search-button --default-button">Поиск</div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
